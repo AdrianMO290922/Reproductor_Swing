@@ -4,6 +4,7 @@
  */
 package com.mycompany.reproductor_musica;
 
+import java.awt.Color;
 import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Field;
@@ -12,6 +13,7 @@ import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.UnsupportedAudioFileException;
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -27,6 +29,20 @@ public class Repro extends javax.swing.JFrame {
     public Repro() {
         super("Reproductor de musica");
         initComponents();
+        btnPlay.setIcon(new ImageIcon("C:\\Users\\adria\\Documents\\TAP\\Reproductor_Musica\\src\\main\\java\\com\\mycompany\\reproductor_musica\\iconos\\Play.png"));
+       // btnPause.setIcon(new ImageIcon("C:\\Users\\adria\\Documents\\TAP\\Reproductor_Musica\\src\\main\\java\\iconos\\pausa.png"));
+        //btnStop.setIcon(new ImageIcon("C:\\Users\\adria\\Documents\\TAP\\Reproductor_Musica\\src\\main\\java\\iconos\\detener.png"));
+        //btnReset.setIcon(new ImageIcon("C:\\Users\\adria\\Documents\\TAP\\Reproductor_Musica\\src\\main\\java\\iconos\\reset.png"));
+        btnPlay.setBackground(Color.WHITE);
+        btnPlay.setBorder(null);
+         btnPause.setBackground(Color.WHITE);
+        btnPause.setBorder(null);
+         btnStop.setBackground(Color.WHITE);
+        btnStop.setBorder(null);
+         btnReset.setBackground(Color.WHITE);
+        btnReset.setBorder(null);
+        
+        getContentPane().setBackground(Color.WHITE);
         setLocationRelativeTo(null);
       
     }
@@ -60,30 +76,24 @@ public class Repro extends javax.swing.JFrame {
             }
         });
 
-        btnPlay.setBackground(new java.awt.Color(0, 153, 255));
         btnPlay.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         btnPlay.setForeground(new java.awt.Color(255, 255, 255));
-        btnPlay.setText("Play");
         btnPlay.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnPlayActionPerformed(evt);
             }
         });
 
-        btnPause.setBackground(new java.awt.Color(255, 102, 102));
         btnPause.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         btnPause.setForeground(new java.awt.Color(255, 255, 255));
-        btnPause.setText("Pause");
         btnPause.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnPauseActionPerformed(evt);
             }
         });
 
-        btnStop.setBackground(new java.awt.Color(255, 0, 0));
         btnStop.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         btnStop.setForeground(new java.awt.Color(255, 255, 255));
-        btnStop.setText("Stop");
         btnStop.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnStopActionPerformed(evt);
@@ -130,10 +140,8 @@ public class Repro extends javax.swing.JFrame {
             }
         });
 
-        btnReset.setBackground(new java.awt.Color(0, 0, 0));
         btnReset.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         btnReset.setForeground(new java.awt.Color(255, 255, 255));
-        btnReset.setText("Reset");
         btnReset.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnResetActionPerformed(evt);
@@ -188,7 +196,7 @@ public class Repro extends javax.swing.JFrame {
                     .addComponent(btnPause)
                     .addComponent(btnReset)
                     .addComponent(btnStop))
-                .addContainerGap(98, Short.MAX_VALUE))
+                .addContainerGap(115, Short.MAX_VALUE))
         );
 
         pack();
