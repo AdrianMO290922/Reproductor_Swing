@@ -29,8 +29,8 @@ public class Repro extends javax.swing.JFrame {
     public Repro() {
         super("Reproductor de musica");
         initComponents();
-        btnPlay.setIcon(new ImageIcon("C:\\Users\\adria\\Documents\\TAP\\Reproductor_Musica\\src\\main\\java\\com\\mycompany\\reproductor_musica\\iconos\\Play.png"));
-       // btnPause.setIcon(new ImageIcon("C:\\Users\\adria\\Documents\\TAP\\Reproductor_Musica\\src\\main\\java\\iconos\\pausa.png"));
+        btnPlay.setIcon(new ImageIcon("C:\\Users\\adria\\Documents\\TAP\\Reproductor_Musica\\src\\main\\java\\com\\mycompany\\reproductor_musica\\iconos\\352074_circle_play_icon.svg"));
+        btnPause.setIcon(new ImageIcon("C:\\Users\\adria\\Documents\\TAP\\Reproductor_Musica\\src\\main\\java\\com\\mycompany\\reproductor_musica\\iconos\\352074_circle_play_icon.png"));
         //btnStop.setIcon(new ImageIcon("C:\\Users\\adria\\Documents\\TAP\\Reproductor_Musica\\src\\main\\java\\iconos\\detener.png"));
         //btnReset.setIcon(new ImageIcon("C:\\Users\\adria\\Documents\\TAP\\Reproductor_Musica\\src\\main\\java\\iconos\\reset.png"));
         btnPlay.setBackground(Color.WHITE);
